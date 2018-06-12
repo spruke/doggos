@@ -50,7 +50,7 @@ Model
 
 IntegrationResult
 
-#set($response = $input.body())
+#set($response = $input.body)
 
 #set($originalParams = $input.params())
 
