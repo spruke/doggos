@@ -51,10 +51,17 @@ Model
 IntegrationResult
 
 #set($response = $input.body())
-#set($originalRequest = $input.params())
+
+#set($originalParams = $input.params())
+
 {
-  "num1" : $originalParams.path.num1,
-  "num2" : $originalParams.querystring.num2,
-  "description" : "We added two numbers",
-  "result" : $response
+
+"num1" : $originalParams.path.num1,
+
+"num2" : $originalParams.querystring.num2,
+
+"description" : "We added two numbers",
+
+"result" : $response
+
 }
