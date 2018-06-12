@@ -10,3 +10,10 @@ aws lambda invoke --function-name "hello-world-2" --payload='{"num1": 2, "num2":
 aws lambda invoke --function-name "hello-world-2" --payload='{"num1": 2, "num2": 2}' --log-type Tail --query=LogResult /tmp/answer.txt | sed -e 's/"//g' | base64 --decode
 
 aws lambda update-function-code --function-name "hello-world-2" --zip-file fileb://hello-world-1006.zip
+
+#set($params = $input.params())
+{
+    "num1": $params.path.num1,
+    "num2": $params.querystring.num2
+}
+
