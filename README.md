@@ -23,3 +23,27 @@ aws lambda update-function-code --function-name "hello-world-2" --zip-file fileb
 
 }
 
+
+Model
+
+{
+
+    "$schema": "http://json-schema.org/draft-04/schema#",
+
+"title": "NumberResult",
+
+"type": "object",
+
+"properties": {
+
+"num1": { "type": "integer" },
+
+"num2": { "type": "integer" },
+
+"description": { "type": "string" },
+
+"result": { "type": "integer" }
+
+}
+
+}
