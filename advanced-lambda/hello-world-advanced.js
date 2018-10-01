@@ -1,6 +1,7 @@
 let _ = require('lodash');
 let mathematicsWizard = require('./mathematics-wizard');
 
+/*
 exports.handler = function(event, context, callback) {
     let num1 = event.num1;
     let num2 = event.num2;
@@ -11,8 +12,9 @@ exports.handler = function(event, context, callback) {
         callback(ex);
     }
 };
+*/
 
-/*exports.handler = function(event, context, callback) {
+exports.handler = function(event, context, callback) {
     let num1 = parseInt(event.pathParameters.num1);
     let num2 = parseInt(event.queryStringParameters.num2);
     try {
@@ -24,4 +26,4 @@ exports.handler = function(event, context, callback) {
     } catch (ex) {
         callback(ex);
     }
-};*/
+};
