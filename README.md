@@ -36,7 +36,8 @@ Model
 ```
 
 IntegrationResult
-```#set($response = $input.body)
+```
+#set($response = $input.body)
 #set($originalParams = $input.params())
 {
 "num1" : $originalParams.path.num1,
